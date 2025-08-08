@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatGPT-5 Style Gradient</title>
+  <style>
+    :root{
+      /* Tweak these if you want to shift tones */
+      --pink: #f7a0b0;
+      --peach: #ffdca8;
+      --blue:  #b9ccff;
+      --bg:    #ffffff;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      /* Layered gradients to mimic the screenshot */
+      background:
+        radial-gradient(60vmin 60vmin at 22% 12%, rgba(247,160,176,.55), transparent 60%),
+        radial-gradient(60vmin 60vmin at 58% 10%, rgba(255,220,168,.70), transparent 62%),
+        radial-gradient(70vmin 70vmin at 90% 6%,  rgba(185,204,255,.65), transparent 60%),
+        linear-gradient(to bottom, rgba(255,255,255,0) 35%, var(--bg) 78%);
+      background-color: var(--bg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      /* Smooth look */
+      filter: saturate(1.02);
+    }
+
+    /* Optional: a centered container to test text on top */
+    .wrap{
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+    }
+    .card{
+      padding: 1rem 1.25rem;
+      border-radius: 14px;
+      background: rgba(255,255,255,.6);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+
+    @media (max-width: 768px){
+      body{
+        /* Slightly tighter blobs on mobile */
+        background:
+          radial-gradient(55vmin 55vmin at 25% 14%, rgba(247,160,176,.55), transparent 60%),
+          radial-gradient(55vmin 55vmin at 60% 12%, rgba(255,220,168,.70), transparent 62%),
+          radial-gradient(60vmin 60vmin at 92% 8%,  rgba(185,204,255,.65), transparent 60%),
+          linear-gradient(to bottom, rgba(255,255,255,0) 38%, var(--bg) 80%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      Same gradient background ✅
+    </div>
+  </div>
+</body>
+</html>
