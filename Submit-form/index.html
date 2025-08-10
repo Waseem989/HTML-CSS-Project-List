@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Create and share <br> your event.</h1>
+            <h3>The first step is to fill out this <br> registration form.</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <form id="event-form">
+                <h2>Event Information</h2>
+
+                <label for="title">Event title <span>(minimum 8 characters)</span></label>
+                <input type="text" name="title" id="title" minlength="8" required>
+
+                <label for="link">Event link <span>(start with https://)</span></label>
+                <input type="url" name="link" id="link" required>
+
+                <label for="phone">WhatsApp for contact <span>(numbers only)</span></label>
+                <input type="number" name="phone" id="phone" required>
+
+                <label for="extra-info">Additional information</label>
+                <textarea name="extra-info" id="extra-info" cols="40" rows="7"></textarea>
+
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="live">Live</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="mentoring">Mentoring</option>
+                </select>
+
+                <h2 class="margin">Privacy</h2>
+
+                <label for="email">Administrator email <span>(enter a valid email)</span></label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Access password for participants <span>(minimum 8 characters)</span></label>
+                <input type="password" name="password" id="password" minlength="8" required>
+
+                <div class="private">
+                    <input type="checkbox" name="private" id="private">
+                    <label for="private">Private event</label>
+                </div>
+
+                <h2 class="margin">Date and Time</h2>
+                <div class="time-grid">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" required>
+
+                    <label for="time-from">From</label>
+                    <input type="time" name="time-from" id="time-from" required>
+
+                    <label for="time-to">To</label>
+                    <input type="time" name="time-to" id="time-to" required>
+                </div>
+            </form>
+
+            <div class="button-area">
+                <button type="submit" form="event-form">Save event</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
