@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Fira Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #141414;
+    padding: 2.2rem 3rem;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    padding-right: 4rem;
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #141414;
+}
+
+.introducao{
+    display: flex;
+    margin: 50px 70px 70px 70px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.introducao img{
+    max-width: 350px;
+}
+
+.sobre{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 80px;
+    position: relative;
+    gap: 1rem;
+}
