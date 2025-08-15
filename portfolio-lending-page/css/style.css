@@ -481,3 +481,185 @@ footer p{
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px){
+    .introducao{
+        margin: 50px 50px 0px 50px;
+    }
+    .introducao img.lobo{
+        margin-left: 10px;
+        max-width: 200px;
+    }
+    .sobre h1{
+        font-size: 2rem;
+    }
+    .experiencia{
+        padding: 0px 20px 1rem 20px;
+    }
+}
+
+@media(max-width: 520px){
+    nav ul{
+        padding-right: 0;
+    }
+    .introducao img.lobo{
+        margin-left: 10px;
+        max-width: 150px;
+    }
+    .sobre {
+        padding: 80px 0px 80px 0px;
+    }
+    .sobre img{
+        max-width: 80px;
+        top: 62px;
+        left: -28px;
+    }
+    .introducao {
+        margin: 0px;
+    }
+    .formacao h1.titulo {
+        grid-row: 1;
+    }
+    .formacoes{
+        grid-template-columns: 0.6fr 0.6fr;
+        margin-right: 0;
+    }
+    .formacoes .mestre{
+        display: grid;
+        grid-column: span 2;
+        grid-row: 3;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px){
+    .introducao img.lobo{
+        display: none;
+    }
+    .sobre h1, h2{
+        padding: 10px;
+    }
+    .sobre img{
+        max-width: 80px;
+        left: -16px;
+        top: 66px;
+    }
+    .bikcraft, .surfbot, .brafe{
+        margin-right: 0;
+    }
+    footer{
+        padding: 80px 30px;
+        gap: 3rem 5rem;
+    }
+
+    footer img{
+        left: 3rem;
+        max-width: 110px;
+        top: -3.2rem;
+    }
+}
+
+@media (max-width: 395px){
+    nav{
+        padding: 1rem 0rem;
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .sobre img{
+        max-width: 70px;
+        left: -12px;
+        top: 25px;
+    }
+    .sobre{
+        padding: 30px 0px 50px 0px;
+    }
+    .experiencia h1.titulo{
+        font-size: 2.5rem;
+    }
+    .bikcraft{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .bikcraft h1 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .bikcraft h1.principal{
+        display: grid;
+        grid-row: 1;
+    }
+    .bikcraft ul {
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+        justify-content: flex-start;
+    }
+    .surfbot{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .surfbot h1 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .surfbot h1.principal{
+        display: grid;
+        grid-row: 1;
+    }
+    .surfbot ul {
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+        justify-content: flex-start;
+    }
+    .brafe{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .brafe h1 {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .brafe h1.principal{
+        display: grid;
+        grid-row: 1;
+    }
+    .brafe ul {
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+        justify-content: flex-start;
+    }
+    .formacoes {
+        gap: 10px;
+    }
+    footer ul {
+        list-style-type: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 320px) {
+    .formacoes {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+    .formacoes .bacharel{
+        grid-column: 1;
+    }
+    .formacoes .tecnologo{
+        grid-column: 1;
+    }
+    .formacoes .mestre{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: left;
+    }
+}
