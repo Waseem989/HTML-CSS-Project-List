@@ -133,3 +133,16 @@ nav ul li a{
     color: #141414;
 }
 
+.bikcraft h2{
+    display: grid;
+    grid-column: 1;
+    font-weight: 400;
+    color: #525252;
+    font-size: 1rem;
+}
+.bikcraft ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 1.5rem;
+    list-style-type: none;
+}
