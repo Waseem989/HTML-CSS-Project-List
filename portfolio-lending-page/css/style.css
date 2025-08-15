@@ -433,3 +433,51 @@ footer p{
         gap: 30px 1rem;
     }
 }
+
+@media (max-width: 800px){
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul{
+        gap: 20px;
+    }
+    nav li{
+        padding: 10px 15px;
+        background-color: #f5f5f5;
+    }
+    .experiencia h1.titulo{
+        color: #141414;
+        font-size: 3rem;
+        padding: 0;
+    }
+    .experiencia{
+        grid-template-columns: 1fr;
+        padding: 0px 20px 5rem 20px;
+    }
+
+    .experiencia h2.subtitulo{
+        padding: 0;
+    }
+
+    .formacao{
+        grid-template-columns: 1fr;
+        padding: 0px 20px 5rem 20px;
+        gap: 20px 1rem;
+    }
+    .formacao h1.titulo{
+        color: #fff;
+        font-size: 3rem;
+        padding: 0;
+    }
+    .formacao h2.subtitulo{
+        padding: 0px;
+    }
+    .formacoes{
+        gap: 20px;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+}
