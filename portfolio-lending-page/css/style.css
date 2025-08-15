@@ -146,3 +146,20 @@ nav ul li a{
     gap: 1.25rem 1.5rem;
     list-style-type: none;
 }
+.bikcraft ul li{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.surfbot{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f5f5f5;
+    padding: 20px;
+    gap: 10px 30px;
+    border-radius: 4px;
+    margin-right: 5rem;
+    position: relative;
+}
+
