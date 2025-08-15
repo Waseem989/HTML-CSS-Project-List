@@ -355,3 +355,81 @@ nav ul li a{
     color: #8f8f8f;
     font-size: 1.2rem;
 }
+
+footer{
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 5rem;
+    gap: 8rem 5rem;
+    position: relative;
+}
+
+footer img{
+    position: absolute;
+    top: -4rem;
+    left: 5rem;
+}
+
+footer h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ccc;
+    grid-column: 1;
+}
+
+footer ul{
+    list-style-type: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+footer ul a{
+    color: #fff
+}
+
+footer li{
+    padding: 15px 0px;
+}
+
+footer p{
+    color: #8f8f8f;
+    grid-column: 1;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px){
+    nav ul{
+        padding-right: 2.5rem;
+    }
+    .introducao img.lobo {
+        max-width: 250px;
+        margin-left: 20px;
+    }
+    .sobre{
+        padding: 80px 0px 80px 30px;
+    }
+    .sobre h1{
+        font-size: 2.5rem;
+    }
+    .sobre img{
+        left: -10px;
+        top: 45px;
+    }
+    .experiencia h1.titulo {
+        font-size: 6rem;
+        padding: 0px 7rem;
+        line-height: 5rem;
+    }
+    .experiencia h2.subtitulo{
+        padding: 0px 10rem 0px 0px
+    }
+    .formacao h2.subtitulo{
+        padding: 0px 10rem 2rem 0px;
+    }
+    .experiencia{
+        gap: 30px 1rem;
+    }
+}
